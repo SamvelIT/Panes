@@ -12,6 +12,18 @@
     src: url("fonts/Merriweather-Bold.ttf")
 }
 
+:root {
+    --blue: aqua;
+    --main-color: #191919;
+    --second-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -23,14 +35,8 @@ main {
     flex-grow: 1;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .header {
-    background-color: aqua;
+    background-color: var(--blue);
 }
 
 .container {
@@ -73,7 +79,8 @@ ul {
 
 .footer {
     padding: 20px 0;
-    background-color: rgb(245, 64, 64);
+    color: var(--second-color);
+    background-color: var(--main-color);
 }
 
 .footer__logo {
@@ -86,12 +93,25 @@ ul {
     align-items: center;
 }
 
+.footer__nav {
+    flex-grow: 1;
+}
+
 .footer__nav-list {
     display: flex;
     gap: 30px;
     justify-content: center;
 }
 
-.footer__nav {
-    flex-grow: 1;
+.footer__nav-link {
+    color: var(--second-color);
+}
+
+.footer__social-link svg {
+    width: 30px;
+    height: 30px;
+}
+
+.footer__social-link svg path {
+    fill: var(--second-color);
 }
