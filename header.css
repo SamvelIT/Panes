@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "Merriweather";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/Merriweather-Regular.ttf")
+}
+
+@font-face {
+    font-family: "Merriweather";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/Merriweather-Bold.ttf")
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  font-family: "Merriweather";  
+}
+
+main {
+    flex-grow: 1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: aqua;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1440px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.header__logo {
+    width: 160px;
+}
+
+.header__contant {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.header__nav-list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.header__nav {
+    flex-grow: 1;
+}
+
+.header__actions {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.footer {
+    padding: 20px 0;
+    background-color: rgb(245, 64, 64);
+}
+
+.footer__logo {
+    width: 130px;
+}
+
+.footer__contant {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.footer__nav-list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.footer__nav {
+    flex-grow: 1;
+}
