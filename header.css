@@ -36,11 +36,13 @@ main {
 }
 
 .btn {
+    display: inline-block;
     color: var(--main-color);
-    transition: .2s linear;
+    transition: all .2s linear;
     background: transparent;
     border: none;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .btn:hover {
