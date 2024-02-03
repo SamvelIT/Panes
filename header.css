@@ -142,7 +142,39 @@ ul {
 
 .yt svg path {
     stroke: var(--second-color);
+    transition: stroke .3s;
 }
 
+.yt:hover svg path {
+    stroke: var(--blue);
+}
+
+.inst svg {
+    width: 30px;
+    height: 30px;
+}
+
+.inst svg path {
+    fill: var(--second-color);
+    transition: fill .3s;
+}
+
+.inst:hover svg path {
+    fill: var(--blue);
+}
+
+.fc svg {
+    width: 30px;
+    height: 30px;
+}
+
+.fc svg path {
+    fill: var(--second-color);
+    transition: fill .3s;
+}
+
+.fc:hover svg path {
+    fill: var(--blue);
+}
 
 
