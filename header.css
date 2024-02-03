@@ -35,6 +35,18 @@ main {
     flex-grow: 1;
 }
 
+.btn {
+    color: var(--main-color);
+    transition: .2s linear;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: translate(-4px, -4px);
+}
+
 .header {
     background-color: var(--blue);
 }
@@ -116,22 +128,4 @@ ul {
     fill: var(--second-color);
 }
 
-.heaer__nav-link {
 
-}
-
-.btn__style {
-    border-radius: 40px;
-    color: white;
-    transition: .2s linear;
-    background: #0B63F6;
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-.btn__style:hover {
-        box-shadow: 2px 2px white, 4px 4px #FC63B5;
-        top: -4px;
-        left: -4px;
-}
