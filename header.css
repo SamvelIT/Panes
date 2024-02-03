@@ -121,13 +121,23 @@ ul {
     color: var(--second-color);
 }
 
-.footer__social-link svg {
+.ws svg {
     width: 30px;
     height: 30px;
 }
 
-.footer__social-link svg path {
+.ws svg path {
     fill: var(--second-color);
 }
+
+.yt svg {
+   height: 40px;
+   width: 50px;
+}
+
+.yt svg path {
+    stroke: var(--second-color);
+}
+
 
 
