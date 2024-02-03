@@ -128,11 +128,16 @@ ul {
 
 .ws svg path {
     fill: var(--second-color);
+    transition: fill .3s;
+}
+
+.ws:hover svg path {
+    fill: var(--blue);
 }
 
 .yt svg {
-   height: 40px;
-   width: 50px;
+   height: 38px;
+   width: 38px;
 }
 
 .yt svg path {
