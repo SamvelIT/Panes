@@ -49,6 +49,10 @@ main {
     transform: translate(-4px, -4px);
 }
 
+.blue {
+    color: var(--blue);
+}
+
 .header {
     background-color: var(--blue);
 }
@@ -176,5 +180,17 @@ ul {
 .fc:active svg path {
     fill: var(--blue);
 }
+
+.games {
+    background-color: var(--main-color);
+    padding: 40px 0;
+}
+
+.games__title {
+    color: var(--second-color);
+    text-align: center;
+    font-size: 30px;
+}
+
 
 
