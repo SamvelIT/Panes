@@ -131,7 +131,7 @@ ul {
     transition: fill .5s;
 }
 
-.ws:hover svg path {
+.ws:active svg path {
     fill: var(--blue);
 }
 
@@ -145,7 +145,7 @@ ul {
     transition: stroke .5s;
 }
 
-.yt:hover svg path {
+.yt:active svg path {
     stroke: var(--blue);
 }
 
@@ -159,7 +159,7 @@ ul {
     transition: fill .5s;
 }
 
-.inst:hover svg path {
+.inst:active svg path {
     fill: var(--blue);
 }
 
@@ -173,7 +173,7 @@ ul {
     transition: fill .5s;
 }
 
-.fc:hover svg path {
+.fc:active svg path {
     fill: var(--blue);
 }
 
