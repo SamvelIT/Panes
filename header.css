@@ -128,7 +128,7 @@ ul {
 
 .ws svg path {
     fill: var(--second-color);
-    transition: fill .3s;
+    transition: fill .5s;
 }
 
 .ws:hover svg path {
@@ -142,7 +142,7 @@ ul {
 
 .yt svg path {
     stroke: var(--second-color);
-    transition: stroke .3s;
+    transition: stroke .5s;
 }
 
 .yt:hover svg path {
@@ -156,7 +156,7 @@ ul {
 
 .inst svg path {
     fill: var(--second-color);
-    transition: fill .3s;
+    transition: fill .5s;
 }
 
 .inst:hover svg path {
@@ -170,7 +170,7 @@ ul {
 
 .fc svg path {
     fill: var(--second-color);
-    transition: fill .3s;
+    transition: fill .5s;
 }
 
 .fc:hover svg path {
