@@ -218,4 +218,6 @@ ul {
     color: var(--second-color);
 }
 
-
+.games__link {
+    text-decoration: none;
+}
