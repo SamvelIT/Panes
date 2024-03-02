@@ -190,7 +190,32 @@ ul {
     color: var(--second-color);
     text-align: center;
     font-size: 30px;
+    margin-bottom: 40px;
 }
 
+.game-card__preview {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.game-card__preview img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.games__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.game-card__title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: var(--second-color);
+}
 
 
