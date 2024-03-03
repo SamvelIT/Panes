@@ -194,9 +194,22 @@ ul {
 }
 
 .game-card__preview {
+    position: relative;
     height: 200px;
     width: 100%;
     margin-bottom: 10px;
+}
+
+.game-card__sticker {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    background-color: var(--second-color);
+    color: var(--main-color);
+    font-size: 10px;
+    border-radius: 20px;
+    padding: 4px 8px;
+    font-weight: 700;
 }
 
 .game-card__preview img {
