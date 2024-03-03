@@ -216,8 +216,14 @@ ul {
     font-weight: 500;
     line-height: 1.1;
     color: var(--second-color);
+    transition: color .4s;
 }
 
 .games__link {
     text-decoration: none;
 }
+
+.games__link:hover .game-card__title {
+   color: var(--blue);
+}
+
