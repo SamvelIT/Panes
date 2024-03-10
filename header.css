@@ -300,3 +300,14 @@ ul {
     background-color: var(--blue-hover);
 }
 
+.form__link {
+    color: var(--blue);
+    font-size: 16px;
+    border: none;
+    outline: none;
+    transition: color .3s;
+}
+
+.form__link:hover {
+    color: var(--blue-hover);
+} 
