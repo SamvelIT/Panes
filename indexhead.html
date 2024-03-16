@@ -37,7 +37,7 @@
                     </ul>
                 </nav>
                 <div class="header__actions">
-                    <button class="btn">
+                    <button class="btn" id="js-sign-in-btn">
                         Войти
                     </button>
                     |
@@ -200,7 +200,7 @@
         </div>
     </footer>
 
-    <div class="modal">
+    <div class="modal d-none" id="js-sign-in-modal">
         <div class="modal__card">
             <h4 class="modal__title">
                 Вход
@@ -229,6 +229,9 @@
                 </svg>
             </button>
         </div>
+    </div>
+
+    <div class="modal d-none">
         <div class="modal__card">
             <h4 class="modal__title">
                 Регистрация
@@ -276,5 +279,16 @@
         </div>
     </div>
 </body>
+
+<script>
+
+    const signInBtn = document.getElementById('js-sign-in-btn');
+    const signInModal = document.getElementById('js-sign-in-modal');
+
+    signInBtn.addEventListener('click', () => {
+        signInModal.classList.remove('d-none');
+    })
+
+</script>
 
 </html>

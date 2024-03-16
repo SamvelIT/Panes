@@ -103,12 +103,15 @@ ul {
 
 .header__logo {
     width: 160px;
+    max-height: 80px;
+    object-fit: contain;
 }
 
 .header__contant {
     display: flex;
     gap: 30px;
     align-items: center;
+    padding: 10px 0;
 }
 
 .header__nav-list {
@@ -339,3 +342,9 @@ ul {
     right: 10px;
 }
 
+
+
+
+.d-none {
+    display: none !important;
+}
