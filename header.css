@@ -50,6 +50,26 @@ main {
     transform: translate(-4px, -4px);
 }
 
+.btn-normalize {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.btn-closer svg {
+    width: 40px;
+    height: 40px;
+}
+
+.btn-closer svg path {
+    fill: var(--main-color);
+    transition: fill .5s;
+}
+
+.btn-closer:hover svg path {
+    fill: var(--blue);
+}
+
 .label {
     display: flex;
     gap: 16px;
@@ -271,6 +291,7 @@ ul {
     padding: 20px;
     background-color: var(--second-color);
     border-radius: 16px;
+    position: relative;
 }
 
 .modal__title {
@@ -311,3 +332,10 @@ ul {
 .form__link:hover {
     color: var(--blue-hover);
 } 
+
+.modal__closer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
