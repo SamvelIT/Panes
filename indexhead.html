@@ -285,9 +285,12 @@
     const openers = document.querySelectorAll('.js-open-sign-modal');
     openers.forEach(btn => {
         const modal = document.getElementById(btn.getAttribute('data-modal'));
-        
+        const closer = modal.querySelector('.js-closer-btn')
         btn.addEventListener('click', () => {
             modal.classList.remove('d-none');
+        })
+        closer.addEventListener('click', () => {
+            modal.classList.add('d-none')
         })
     });
 
