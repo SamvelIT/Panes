@@ -41,7 +41,7 @@
                         Войти
                     </button>
                     |
-                    <button class="btn">
+                    <button class="btn" id="js-sign-up-btn">
                         Зарегистрироваться
                     </button>
                 </div>
@@ -231,7 +231,7 @@
         </div>
     </div>
 
-    <div class="modal d-none">
+    <div class="modal d-none" id="js-sign-up-modal" >
         <div class="modal__card">
             <h4 class="modal__title">
                 Регистрация
@@ -264,7 +264,7 @@
                 </button>
             </form>
 
-            <button class="btn-normalize btn-closer modal__closer">
+            <button class="btn-normalize btn-closer modal__closer" id="js-closer-btn" >
                 <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="SVGRepo_bgCarrier" stroke-width="0" />
                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
@@ -288,6 +288,19 @@
     signInBtn.addEventListener('click', () => {
         signInModal.classList.remove('d-none');
     })
+
+</script>
+
+<script>
+
+    const signUpBtn = document.getElementById('js-sign-up-btn');
+    const signUpModal = document.getElementById('js-sign-up-modal');
+
+
+    signUpBtn.addEventListener('click', () => {
+        signUpModal.classList.remove('d-none');
+    })
+
 
 </script>
 
