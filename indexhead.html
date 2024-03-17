@@ -200,7 +200,7 @@
         </div>
     </footer>
 
-    <div class="modal d-none" id="js-sign-in-modal">
+    <div class="modal hidden" id="js-sign-in-modal">
         <div class="modal__card">
             <h4 class="modal__title">
                 Вход
@@ -231,7 +231,7 @@
         </div>
     </div>
 
-    <div class="modal d-none" id="js-sign-up-modal" >
+    <div class="modal hidden" id="js-sign-up-modal" >
         <div class="modal__card">
             <h4 class="modal__title">
                 Регистрация
@@ -239,6 +239,9 @@
             <form class="modal__form">
                 <label class="label">
                     <input type="text" class="input" placeholder="Придумайте логин">
+                </label>
+                <label class="label">
+                    <input type="text" class="input" placeholder="Введите телефон">
                 </label>
                 <label class="label">
                     <input type="password" class="input" placeholder="Придумайте пароль">
@@ -287,10 +290,10 @@
         const modal = document.getElementById(btn.getAttribute('data-modal'));
         const closer = modal.querySelector('.js-closer-btn')
         btn.addEventListener('click', () => {
-            modal.classList.remove('d-none');
+            modal.classList.remove('hidden');
         })
         closer.addEventListener('click', () => {
-            modal.classList.add('d-none')
+            modal.classList.add('hidden')
         })
     });
 
