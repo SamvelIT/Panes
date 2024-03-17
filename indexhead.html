@@ -37,11 +37,11 @@
                     </ul>
                 </nav>
                 <div class="header__actions">
-                    <button class="btn" id="js-sign-in-btn">
+                    <button class="btn js-open-sign-modal" data-modal="js-sign-in-modal">
                         Войти
                     </button>
                     |
-                    <button class="btn" id="js-sign-up-btn">
+                    <button class="btn js-open-sign-modal" data-modal="js-sign-up-modal">
                         Зарегистрироваться
                     </button>
                 </div>
@@ -216,7 +216,7 @@
                     Отправить
                 </button>
             </form>
-            <button class="btn-normalize btn-closer modal__closer">
+            <button class="btn-normalize btn-closer modal__closer js-closer-btn">
                 <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="SVGRepo_bgCarrier" stroke-width="0" />
                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
@@ -264,7 +264,7 @@
                 </button>
             </form>
 
-            <button class="btn-normalize btn-closer modal__closer" id="js-closer-btn" >
+            <button class="btn-normalize btn-closer modal__closer js-closer-btn" >
                 <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="SVGRepo_bgCarrier" stroke-width="0" />
                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
@@ -282,26 +282,17 @@
 
 <script>
 
-    const signInBtn = document.getElementById('js-sign-in-btn');
-    const signInModal = document.getElementById('js-sign-in-modal');
-
-    signInBtn.addEventListener('click', () => {
-        signInModal.classList.remove('d-none');
-    })
-
-</script>
-
-<script>
-
-    const signUpBtn = document.getElementById('js-sign-up-btn');
-    const signUpModal = document.getElementById('js-sign-up-modal');
-
-
-    signUpBtn.addEventListener('click', () => {
-        signUpModal.classList.remove('d-none');
-    })
+    const openers = document.querySelectorAll('.js-open-sign-modal');
+    openers.forEach(btn => {
+        const modal = document.getElementById(btn.getAttribute('data-modal'));
+        
+        btn.addEventListener('click', () => {
+            modal.classList.remove('d-none');
+        })
+    });
 
 
 </script>
+
 
 </html>
