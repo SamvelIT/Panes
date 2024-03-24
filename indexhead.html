@@ -241,7 +241,7 @@
                     <input type="text" class="input" placeholder="Придумайте логин">
                 </label>
                 <label class="label">
-                    <input type="text" class="input" placeholder="Введите телефон">
+                    <input type="tel" class="input" placeholder="Введите телефон">
                 </label>
                 <label class="label">
                     <input type="password" class="input" placeholder="Придумайте пароль">
@@ -283,6 +283,8 @@
     </div>
 </body>
 
+<script src="https://unpkg.com/imask"></script>
+
 <script>
 
     const openers = document.querySelectorAll('.js-open-sign-modal');
@@ -296,6 +298,8 @@
             modal.classList.add('hidden')
         })
     });
+    const tels = document.querySelectorAll('input[type="tel"]')
+    console.log(tels)
 
 
 </script>
