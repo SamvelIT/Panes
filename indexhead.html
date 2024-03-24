@@ -231,7 +231,7 @@
         </div>
     </div>
 
-    <div class="modal hidden" id="js-sign-up-modal" >
+    <div class="modal hidden" id="js-sign-up-modal">
         <div class="modal__card">
             <h4 class="modal__title">
                 Регистрация
@@ -267,7 +267,7 @@
                 </button>
             </form>
 
-            <button class="btn-normalize btn-closer modal__closer js-closer-btn" >
+            <button class="btn-normalize btn-closer modal__closer js-closer-btn">
                 <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="SVGRepo_bgCarrier" stroke-width="0" />
                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
@@ -283,7 +283,7 @@
     </div>
 </body>
 
-<script src="https://unpkg.com/imask"></script>
+<script src="js/imask.js"></script>
 
 <script>
 
@@ -299,7 +299,18 @@
         })
     });
     const tels = document.querySelectorAll('input[type="tel"]')
-    console.log(tels)
+    tels.forEach(input => {
+        maskOptions = {
+            mask: '+{7} (000) 000-00-00',
+            RegExp: '(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?',
+        }
+
+        const mask = IMask(input, maskOptions);
+       
+
+    })
+
+
 
 
 </script>
