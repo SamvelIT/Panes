@@ -444,6 +444,19 @@ ul {
     .footer__nav-link {
         font-size: 14px;
     }
+
+    .games__title {
+        font-size: 24px;
+    margin-bottom: 20px;
+    }
+
+    .games__list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .game-card__title {
+        font-size: 14px;
+    }
 }
 
 @media(max-width: 576px) {
@@ -457,5 +470,19 @@ ul {
 
     .footer__nav-link {
         font-size: 12px;
+    }
+
+    .games__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header__burger {
+     padding: 5;
+     width: 40px;
+     height: 40px;
+    }
+
+    .game-card__title {
+        font-size: 10px;
     }
 }
