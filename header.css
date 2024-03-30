@@ -113,12 +113,12 @@ ul {
 }
 
 .header__burger svg path {
-    fill: var(--main-color);
-    transition: fill .3s;
+    stroke: var(--main-color);
+    transition: stroke .3s;
 }
 
 .header__burger:hover svg path {
-    fill: var(--second-color);
+    stroke: var(--second-color);
 }
 
 .header__logo {
