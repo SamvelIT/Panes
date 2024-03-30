@@ -36,13 +36,16 @@ main {
     flex-grow: 1;
 }
 
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 .btn {
     display: inline-block;
     color: var(--main-color);
     transition: all .2s linear;
-    background: transparent;
-    border: none;
-    cursor: pointer;
     text-decoration: none;
 }
 
@@ -88,10 +91,6 @@ main {
     color: var(--blue);
 }
 
-.header {
-    background-color: var(--blue);
-}
-
 .container {
     margin: 0 auto;
     padding: 0 20px;
@@ -100,6 +99,26 @@ main {
 
 ul {
     list-style-type: none;
+}
+
+.header {
+    background-color: var(--blue);
+}
+
+.header__burger {
+    display: none;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.header__burger svg path {
+    fill: var(--main-color);
+    transition: fill .3s;
+}
+
+.header__burger:hover svg path {
+    fill: var(--second-color);
 }
 
 .header__logo {
@@ -131,7 +150,24 @@ ul {
     align-items: center;
 }
 
+@media (max-width: 992px) {
+    .header__burger {
+        display: block;
+    }
 
+    .header__actions {
+        display: none;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__contant {
+        justify-content: space-between;
+    }
+    
+}
 
 .footer {
     padding: 20px 0;
