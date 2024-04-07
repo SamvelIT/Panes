@@ -381,6 +381,29 @@ ul {
     right: 10px;
 }
 
+.nav-modal {
+    display: none;
+}
+
+.nav-modal .modal__card {
+    width: 300px;
+    max-width: 100%;
+}
+
+.nav-modal__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nav-modal__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 40px;
+}
+
 .hidden {
     opacity: 0;
     visibility: hidden;
@@ -397,6 +420,10 @@ ul {
 @media (max-width: 992px) {
     .header__burger {
         display: block;
+    }
+
+    .nav-modal {
+        display: flex;
     }
 
     .header__actions {
