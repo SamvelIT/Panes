@@ -330,7 +330,19 @@ ul {
 
 .inf__content {
     color: var(--second-color);
-    font-size: 10px;
+    font-size: 20px;
+}
+
+.whywe {
+    background-color: var(--main-color);
+    padding: 40px 0;
+}
+
+.whywe__title {
+    color: var(--second-color);
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 40px;
 }
 
 .modal {
