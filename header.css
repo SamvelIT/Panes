@@ -267,6 +267,8 @@ ul {
     margin-bottom: 40px;
 }
 
+.
+
 .game-card__preview {
     position: relative;
     width: 100%;
@@ -312,6 +314,18 @@ ul {
 
 .games__link:hover .game-card__title {
    color: var(--blue);
+}
+
+.information {
+    background-color: var(--main-color);
+    padding: 40px 0;
+}
+
+.inf__title {
+    color: var(--second-color);
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 40px;
 }
 
 .modal {
