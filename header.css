@@ -578,6 +578,7 @@ ul {
 
     .game-card__title {
         font-size: 14px;
+
     }
 
     .inf__title {
@@ -600,18 +601,26 @@ ul {
 
     .whywe-card__title {
         font-size: 20px;
+        margin-top: 5px;
+        margin-left: 20px;
     }
 
     .whywe-card__title-one {
         font-size: 20px;
+        margin-top: 5px;
+        margin-left: 65px;
     }
 
     .whywe-card__title-two {
         font-size: 20px;
+        margin-top: 5px;
+        margin-left: 40px;
     }
 
     .whywe-card__title-three {
         font-size: 20px;
+        margin-top: 5px;
+        margin-left: 15px;
     }
 
 }
@@ -655,19 +664,27 @@ ul {
     }
 
     .whywe-card__title {
-        font-size: 14px;
+        font-size: 20px;
+        margin-top: 5px;
+        margin-left: 35px;
     }
 
     .whywe-card__title-one {
-        font-size: 14px;
+        font-size: 20px;
+        margin-top: 5px;
+        margin-left: 75px;
     }
 
     .whywe-card__title-two {
-        font-size: 14px;
+        font-size: 20px;
+        margin-top: 5px;
+        margin-left: 50px;
     }
 
     .whywe-card__title-three {
-        font-size: 14px;
+        font-size: 20px;
+        margin-top: 5px;
+        margin-left: 35px;
     }
 
 }
