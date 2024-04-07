@@ -328,6 +328,11 @@ ul {
     margin-bottom: 40px;
 }
 
+.inf__content {
+    color: var(--second-color);
+    font-size: 10px;
+}
+
 .modal {
     position: fixed;
     top: 0;
