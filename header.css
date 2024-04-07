@@ -345,6 +345,67 @@ ul {
     margin-bottom: 40px;
 }
 
+.whywe__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.whywe-card__preview {
+    position: relative;
+    margin-left: 20px;
+    width: 80%;
+    aspect-ratio: 1/1;
+    margin-bottom: 10px;
+}
+
+.whywe-card__preview img {
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.whywe-card__title {
+    color: var(--second-color);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-left: 25px;
+    font-size: 30px;
+}
+
+.whywe-card__title-one {
+    color: var(--second-color);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-left: 85px;
+    font-size: 30px;
+}
+
+.whywe-card__title-two {
+    color: var(--second-color);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-left: 60px;
+    font-size: 30px;
+}
+
+.whywe-card__title-three {
+    color: var(--second-color);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-left: 25px;
+    font-size: 30px;
+}
+
+
 .modal {
     position: fixed;
     top: 0;
@@ -518,6 +579,41 @@ ul {
     .game-card__title {
         font-size: 14px;
     }
+
+    .inf__title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .inf__content {
+        font-size: 16px;
+    }
+
+    .whywe__title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .whywe__list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .whywe-card__title {
+        font-size: 20px;
+    }
+
+    .whywe-card__title-one {
+        font-size: 20px;
+    }
+
+    .whywe-card__title-two {
+        font-size: 20px;
+    }
+
+    .whywe-card__title-three {
+        font-size: 20px;
+    }
+
 }
 
 @media(max-width: 576px) {
@@ -549,4 +645,29 @@ ul {
     .game-card__title {
         font-size: 12px;
     }
+
+    .inf__content {
+        font-size: 12px;
+    }
+
+    .whywe__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .whywe-card__title {
+        font-size: 14px;
+    }
+
+    .whywe-card__title-one {
+        font-size: 14px;
+    }
+
+    .whywe-card__title-two {
+        font-size: 14px;
+    }
+
+    .whywe-card__title-three {
+        font-size: 14px;
+    }
+
 }
