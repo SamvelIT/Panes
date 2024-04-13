@@ -2,14 +2,14 @@
     font-family: "Merriweather";
     font-style: normal;
     font-weight: 400;
-    src: url("fonts/Merriweather-Regular.ttf")
+    src: url("fonts/Merriweather-Regular.ttf");
 }
 
 @font-face {
     font-family: "Merriweather";
     font-style: normal;
     font-weight: 700;
-    src: url("fonts/Merriweather-Bold.ttf")
+    src: url("fonts/Merriweather-Bold.ttf");
 }
 
 :root {
@@ -25,11 +25,17 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-  font-family: "Merriweather";  
+    font-family: "Merriweather";
+    background-color: var(--main-color);
+    scroll-behavior: smooth;
 }
 
 main {
@@ -45,7 +51,7 @@ button {
 .btn {
     display: inline-block;
     color: var(--main-color);
-    transition: all .2s linear;
+    transition: all 0.2s linear;
     text-decoration: none;
 }
 
@@ -66,7 +72,7 @@ button {
 
 .btn-closer svg path {
     fill: var(--main-color);
-    transition: fill .5s;
+    transition: fill 0.5s;
 }
 
 .btn-closer:hover svg path {
@@ -117,7 +123,7 @@ ul {
 
 .header__burger svg path {
     stroke: var(--main-color);
-    transition: stroke .3s;
+    transition: stroke 0.3s;
 }
 
 .header__burger:hover svg path {
@@ -129,7 +135,6 @@ ul {
     max-height: 80px;
     object-fit: contain;
     object-position: left center;
-
 }
 
 .header__contant {
@@ -155,12 +160,9 @@ ul {
     align-items: center;
 }
 
-
-
 .footer {
-    padding: 20px 0;
+    margin-top: 40px;
     color: var(--second-color);
-    background-color: var(--main-color);
 }
 
 .footer__logo {
@@ -168,13 +170,14 @@ ul {
     max-height: 80px;
     object-fit: contain;
     object-position: left center;
-
 }
 
 .footer__contant {
     display: flex;
     gap: 30px;
     align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .footer__nav {
@@ -198,7 +201,7 @@ ul {
 
 .ws svg path {
     fill: var(--second-color);
-    transition: fill .5s;
+    transition: fill 0.5s;
 }
 
 .ws:active svg path {
@@ -206,13 +209,13 @@ ul {
 }
 
 .yt svg {
-   height: 38px;
-   width: 38px;
+    height: 38px;
+    width: 38px;
 }
 
 .yt svg path {
     stroke: var(--second-color);
-    transition: stroke .5s;
+    transition: stroke 0.5s;
 }
 
 .yt:active svg path {
@@ -226,7 +229,7 @@ ul {
 
 .inst svg path {
     fill: var(--second-color);
-    transition: fill .5s;
+    transition: fill 0.5s;
 }
 
 .inst:active svg path {
@@ -240,7 +243,7 @@ ul {
 
 .fc svg path {
     fill: var(--second-color);
-    transition: fill .5s;
+    transition: fill 0.5s;
 }
 
 .fc:active svg path {
@@ -253,10 +256,7 @@ ul {
     align-items: center;
 }
 
-
-
 .games {
-    background-color: var(--main-color);
     padding: 40px 0;
 }
 
@@ -266,8 +266,6 @@ ul {
     font-size: 30px;
     margin-bottom: 40px;
 }
-
-.
 
 .game-card__preview {
     position: relative;
@@ -305,7 +303,7 @@ ul {
     font-weight: 500;
     line-height: 1.1;
     color: var(--second-color);
-    transition: color .4s;
+    transition: color 0.4s;
 }
 
 .games__link {
@@ -313,12 +311,11 @@ ul {
 }
 
 .games__link:hover .game-card__title {
-   color: var(--blue);
+    color: var(--blue);
 }
 
-.information {
-    background-color: var(--main-color);
-    padding: 40px 0;
+.inf {
+    padding: 80px 0;
 }
 
 .inf__title {
@@ -334,7 +331,6 @@ ul {
 }
 
 .whywe {
-    background-color: var(--main-color);
     padding: 40px 0;
 }
 
@@ -348,63 +344,35 @@ ul {
 .whywe__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
+    gap: 20px;
+}
+
+.whywe-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .whywe-card__preview {
     position: relative;
-    margin-left: 20px;
-    width: 80%;
+    width: 100%;
     aspect-ratio: 1/1;
-    margin-bottom: 10px;
 }
 
 .whywe-card__preview img {
-    height: 80%;
+    height: 100%;
     width: 100%;
     object-fit: cover;
 }
+
+
+
 
 .whywe-card__title {
     color: var(--second-color);
-    height: 100%;
     width: 100%;
-    object-fit: cover;
-    margin-top: 10px;
-    margin-left: 25px;
-    font-size: 30px;
+    font-size: 20px;
 }
-
-.whywe-card__title-one {
-    color: var(--second-color);
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    margin-top: 10px;
-    margin-left: 85px;
-    font-size: 30px;
-}
-
-.whywe-card__title-two {
-    color: var(--second-color);
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    margin-top: 10px;
-    margin-left: 60px;
-    font-size: 30px;
-}
-
-.whywe-card__title-three {
-    color: var(--second-color);
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    margin-top: 10px;
-    margin-left: 25px;
-    font-size: 30px;
-}
-
 
 .modal {
     position: fixed;
@@ -418,7 +386,7 @@ ul {
     justify-content: center;
     align-items: flex-start;
     transition-property: opacity, visibility;
-    transition-duration: .3s;
+    transition-duration: 0.3s;
 }
 
 .modal__card {
@@ -447,7 +415,7 @@ ul {
     color: var(--second-color);
     border: none;
     outline: none;
-    transition: background-color .4s;
+    transition: background-color 0.4s;
     cursor: pointer;
 }
 
@@ -460,12 +428,12 @@ ul {
     border: none;
     outline: none;
     text-decoration: none;
-    transition: color .3s;
+    transition: color 0.3s;
 }
 
 .form__link:hover {
     color: var(--blue-hover);
-} 
+}
 
 .modal__closer {
     position: absolute;
@@ -501,13 +469,9 @@ ul {
     visibility: hidden;
 }
 
-
-
-
 .d-none {
     display: none !important;
 }
-
 
 @media (max-width: 992px) {
     .header__burger {
@@ -529,7 +493,7 @@ ul {
     .header__contant {
         justify-content: space-between;
     }
-    
+
     .header__logo,
     .footer__logo {
         width: 100px;
@@ -550,10 +514,13 @@ ul {
     .footer__nav-list {
         justify-content: space-between;
     }
+
+    .whywe-card__title {
+        font-size: 18px;
+    }
 }
 
-
-@media(max-width: 768px) {
+@media (max-width: 768px) {
     .footer__contant {
         column-gap: 12px;
     }
@@ -569,7 +536,7 @@ ul {
 
     .games__title {
         font-size: 24px;
-    margin-bottom: 20px;
+        margin-bottom: 20px;
     }
 
     .games__list {
@@ -578,7 +545,10 @@ ul {
 
     .game-card__title {
         font-size: 14px;
+    }
 
+    .inf {
+        padding: 40px 0;
     }
 
     .inf__title {
@@ -592,7 +562,6 @@ ul {
 
     .whywe__title {
         font-size: 20px;
-        margin-bottom: 20px;
     }
 
     .whywe__list {
@@ -600,32 +569,14 @@ ul {
     }
 
     .whywe-card__title {
-        font-size: 20px;
-        margin-top: 5px;
-        margin-left: 20px;
+        font-size: 16px;
     }
 
-    .whywe-card__title-one {
-        font-size: 20px;
-        margin-top: 5px;
-        margin-left: 65px;
-    }
 
-    .whywe-card__title-two {
-        font-size: 20px;
-        margin-top: 5px;
-        margin-left: 40px;
-    }
-
-    .whywe-card__title-three {
-        font-size: 20px;
-        margin-top: 5px;
-        margin-left: 15px;
-    }
-
+    
 }
 
-@media(max-width: 576px) {
+@media (max-width: 576px) {
     .footer__contant {
         column-gap: 0;
     }
@@ -643,7 +594,7 @@ ul {
     }
 
     .header__burger {
-     padding: 5;
+        padding: 5;
     }
 
     .header__burger svg {
@@ -663,20 +614,8 @@ ul {
         grid-template-columns: repeat(2, 1fr);
     }
 
+
     .whywe-card__title {
-        font-size: 20px;
+        font-size: 12px;
     }
-
-    .whywe-card__title-one {
-        font-size: 20px;
-    }
-
-    .whywe-card__title-two {
-        font-size: 20px;
-    }
-
-    .whywe-card__title-three {
-        font-size: 20px;
-    }
-
 }
