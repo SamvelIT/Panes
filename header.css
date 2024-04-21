@@ -474,12 +474,23 @@ ul {
 }
 
 .hero__swiper {
-    min-height: 100vh;
+    height: 100vh;
+    min-height: 700px;
 }
 
 .hero__swiper .swiper-slide img {
     height: 100%;
     width: 100%;
+    object-fit: cover;
+}
+
+.hero__slide-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: var(--second-color);
+    padding: 100px 0;
 }
 
 @media (max-width: 992px) {
