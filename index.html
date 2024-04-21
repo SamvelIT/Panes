@@ -9,9 +9,11 @@
     </title>
 
     <link rel="stylesheet" href="normalize.css">
-    
+
 
     <link rel="stylesheet" href="header.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
 
 </head>
@@ -64,7 +66,22 @@
         <section class="hero">
             <div class="container">
                 <div class="hero__content">
-
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="img/1-1536x864.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/1663249680_34-mykaleidoscope-ru-p-chuvstvo-miloserdiya-krasivo-35.jpg"
+                                    alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/ffi-incentive-moral.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -429,6 +446,8 @@
 
 <script src="js/imask.js"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 <script>
 
     const openers = document.querySelectorAll('.js-modal-opener');
@@ -457,6 +476,12 @@
 
 
 
+</script>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+        
+    });
 </script>
 
 
