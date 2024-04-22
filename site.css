@@ -256,6 +256,10 @@ ul {
     align-items: center;
 }
 
+.hero__slide-text {
+    font-size: 25px;
+}
+
 .games {
     padding: 40px 0;
 }
@@ -388,12 +392,17 @@ ul {
 }
 
 .vk__link {
-    cursor: pointer
+    cursor: pointer;
     color: var(--second-color);
     font-size: 30px;
     text-decoration: none;
     outline: none;
     border: none;
+    transition: color 0.5s;
+}
+
+.vk__link:hover {
+    color: var(--blue);
 }
 
 .modal {
@@ -568,6 +577,10 @@ ul {
     .whywe-card__title {
         font-size: 18px;
     }
+
+    .contact__title {
+        font-size: 38px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -622,8 +635,22 @@ ul {
         font-size: 16px;
     }
 
+    .contact {
+        padding: 40px 0;
+    }
 
-    
+    .contact__title {
+        font-size: 32px;
+    }
+
+    .whatsapp__content {
+        padding: 30px 0;
+        font-size: 22px;
+    }
+
+    .vk__link {
+        font-size: 26px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -667,5 +694,17 @@ ul {
 
     .whywe-card__title {
         font-size: 12px;
+    }
+
+    .contact__title {
+        font-size: 26px;
+    }
+
+    .whatsapp__content {
+        font-size: 18px;
+    }
+
+    .vk__link {
+        font-size: 23px;
     }
 }
