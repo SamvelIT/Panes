@@ -161,7 +161,7 @@ ul {
 }
 
 .footer {
-    margin-top: 40px;
+    margin-top: 30px;
     color: var(--second-color);
 }
 
@@ -386,9 +386,13 @@ ul {
 }
 
 .whatsapp__content {
-    padding: 60px 0;
+    margin-top: 50px;
     color: var(--second-color);
     font-size: 30px;
+}
+
+.vk__content {
+    margin-top: 95px;
 }
 
 .vk__link {
@@ -402,6 +406,46 @@ ul {
 }
 
 .vk__link:hover {
+    color: var(--blue);
+}
+
+.telegram__content {
+    color: var(--second-color);
+    margin-top: 95px;
+}
+
+.csdevs__content {
+    margin-top: 95px;
+}
+
+.csdevs__link {
+    color: var(--second-color);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    transition: color 0.5s;
+}
+
+.csdevs__link:hover {
+    color: var(--blue);
+}
+
+.github__content {
+    margin-top: 95px;
+}
+
+.github__link {
+    color: var(--second-color);
+    font-size: 30px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: color 0.5s;
+}
+
+.github__link:hover {
     color: var(--blue);
 }
 
