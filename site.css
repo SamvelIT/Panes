@@ -414,6 +414,12 @@ ul {
     margin-top: 95px;
 }
 
+.discord__content {
+    margin-top: 95px;
+    color: var(--second-color);
+    font-size: 30px;
+}
+
 .csdevs__content {
     margin-top: 95px;
 }
